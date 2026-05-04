@@ -51,18 +51,31 @@
     justify-items: center;
 }
 
-.pixel-gallery img {
-    width: 100%;
-    max-width: 500px;
-    image-rendering: pixelated;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
-    transition: transform .25s ease, box-shadow .25s ease;
+.pixel-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: 1.5rem;
+    justify-items: center;
 }
 
 .pixel-gallery img:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 22px rgba(0, 0, 0, .15);
+}
+
+@media (max-width: 640px) {
+    .skills-list {
+        gap: 0.5rem;
+    }
+
+    .skills-list span {
+        font-size: 0.9rem;
+        padding: 0.35rem 0.7rem;
+    }
+
+    .pixel-art {
+        margin-top: 2rem;
+    }
 }
 
 

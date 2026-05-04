@@ -78,3 +78,22 @@
 .project-links a:hover {
     background: #333;
 }
+
+@media (max-width: 640px) {
+    .projects-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-card {
+        padding: 1.1rem;
+    }
+
+    .project-links {
+        flex-wrap: wrap;
+    }
+}

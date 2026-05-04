@@ -30,11 +30,45 @@
     margin-top: 1.5rem;
 }
 
+.section {
+    margin-top: 2rem;
+}
+
+.section h2 {
+    margin-bottom: .75rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: .25rem;
+}
+
+.page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 640px) {
+    .page-wrapper {
+        padding: 1.25rem 1rem 2rem;
+    }
+
     .contact-info {
+        width: 100%;
         text-align: left;
     }
-    .top-row {
-        flex-direction: column;
+
+    .btn-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
     }
 }
