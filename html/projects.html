@@ -16,11 +16,21 @@
 <main class="page-wrapper">
     <div class="projects-header">
         <h1>Projects</h1>
-    <p>Selected work in robotics, software systems, web development, and data validation.</p>
+    <p>Three projects exploring how people check an order, drive a robot, and interpret a data pipeline run.</p>
     </div>
 
     <div class="project-grid">
 
+
+        <div class="project-card">
+            <h3>Cardinal Order Board</h3>
+<a href="../images/cob-shipment.png"><img class="project-image" style="width:100%;height:auto;border-radius:8px;margin-bottom:.6rem" src="../images/cob-shipment.png" alt="Shipment details showing the revised arrival date — open full size"></a><a href="../images/cob-allocation.png"><img class="project-image" style="width:100%;height:auto;border-radius:8px;margin-bottom:.6rem" src="../images/cob-allocation.png" alt="Allocation review showing 8 of the 12 requested cases — open full size"></a>
+            <p><strong>CSCI 443 UX design project.</strong> When a shipment slips, sales needs to know both the new arrival date and how much product it can promise. Interviews across five employee roles showed that a single order status could not answer both questions.</p>
+<div class="project-links"><a class="btn" href="https://new.express.adobe.com/webpage/lxT2cFe9dSMWk">Adobe Express Link</a></div>
+            <p>I used empathy maps and a composite persona to compare employee needs, then sketched the handoff from shipment lookup to allocation review. In Adobe XD, I carried the product into the request form so employees could correct a missing quantity without starting again.</p>
+            <p>In the prototype, sales requests 12 cases and receives 8. Showing both quantities beside the follow-up owner makes the next customer call clear. My next usability test would ask an employee how many cases they can confirm and when.</p>
+            <div class="tech">Interviews · Empathy maps · Sketches · Adobe XD</div>
+        </div>
 
         <div class="project-card">
             <h3>Browser-Controlled Robot with Dialog Engine</h3>
@@ -29,8 +39,7 @@
                 Your browser does not support the video tag.
             </video>
             <p>
-                Built a Flask-based robot control system with Raspberry Pi integration,
-                web controls, dialog logic, joystick driving, and LIDAR safety features.
+                An operator needs to steer a moving robot from a browser while the robot responds to nearby obstacles. I connected a browser joystick to a Flask application running on a Raspberry Pi, then worked through how the robot should follow a wall. On the hardware, I debugged sensor placement, orientation, and which side of the robot tracked the wall. The video shows the resulting wall-following behavior.
             </p>
             <div class="tech">Python · Flask · Raspberry Pi · JavaScript · RPLIDAR</div>
         </div>
@@ -39,42 +48,9 @@
             <h3>ETL Metadata Validation Dashboard</h3>
             <img class="project-image" src="../images/CSCI491-SRC.jpg" alt="Browser-controlled robot project">
             <p>
-                Built Databricks and SQL logic to validate ETL metadata, classify run outcomes,
-                and support reporting through dashboard-friendly tables and views.
+                Someone reviewing a pipeline run needs to tell what happened without interpreting every metadata record. I used PySpark and SQL in Databricks to validate the metadata and classify each run outcome, then organized those results into tables and views for dashboard reporting. Each displayed status draws on the same classification logic.
             </p>
             <div class="tech">Databricks · PySpark · SQL</div>
-        </div>
-
-        <div class="project-card">
-            <h3>Robot Wall-Following and Sensor Integration</h3>
-            <p>
-                Implemented wall-following behavior using LIDAR data and debugged
-                orientation, wall-side logic, and sensor-placement issues on real hardware.
-            </p>
-            <div class="tech">Python · Robotics · Sensor Processing</div>
-        </div>
-
-        
-
-        <div class="project-card">
-            <h3>2D Sandbox / RPG Game Engine Work</h3>
-            <p>
-                Developed Java game systems including movement, animation, collision,
-                autotiling, map logic, follower entities, and item interactions.
-            </p>
-            <div class="tech">Java · 2D Graphics · Game Systems</div>
-        </div>
-
-        <div class="project-card">
-            <h3>Drink Sync</h3>
-            <p>
-                Built a CRUD web app for logging drinks, ratings, notes, and images
-                using PHP, MariaDB, and a multi-page front end.
-            </p>
-            <div class="tech">PHP · MariaDB · HTML/CSS/JS</div>
-            <div class="project-links">
-                <a href="https://github.com/jordan-unzaga/DrinkSync" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
         </div>
 
     </div>
